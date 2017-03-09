@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        // string caminho = Environment.CurrentDirectory;
+        string caminho = Environment.CurrentDirectory;
 
         public Form1()
         {
@@ -59,7 +59,7 @@ namespace WindowsFormsApplication1
         // Método responsável pelo play do aúdio do login.
         private void PlayAudioLogin()
         {           
-            SoundPlayer audio_Trovao = new SoundPlayer(@"C: \Users\fabri\Source\Repos\LoginEstudo\WindowsFormsApplication1\WindowsFormsApplication1\Audio\trovao.wav");
+            SoundPlayer audio_Trovao = new SoundPlayer(caminho + @"\trovao.wav");
             audio_Trovao.Play();
         } // Fim.
 
